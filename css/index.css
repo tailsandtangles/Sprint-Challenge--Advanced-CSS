@@ -1,4 +1,3 @@
-@phone (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +173,11 @@ nav .nav {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  nav .nav {
+    width: 80%;
+  }
+}
 nav .navigation {
   width: 100%;
   display: flex;
@@ -200,8 +204,13 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  padding-top: 120px;
+  padding-top: 110px;
   border-radius: 6px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -221,6 +230,17 @@ footer {
   height: 100%;
   border-radius: 19px;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -237,11 +257,28 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 18px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-top: 20px;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -261,9 +298,32 @@ footer {
   color: #22283A;
   background-color: #F6F7F8;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: #22283A;
+    color: #F6F7F8;
+    align-items: center;
+    border-radius: 7px;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #22283A;
+    background-color: #F6F7F8;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
