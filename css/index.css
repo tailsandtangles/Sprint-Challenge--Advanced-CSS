@@ -186,7 +186,7 @@ nav a {
 }
 nav h1 {
   font-size: 46px;
-  margin: 15px 0;
+  margin: 15px;
 }
 footer {
   color: #22283B;
@@ -239,6 +239,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 90px;
+  font-size: 1.6rem;
+  background-color: #22283A;
+  color: #F6F7F8;
+  align-items: center;
+  border-radius: 7px;
 }
 .home .walk .walk-img {
   width: 46%;
