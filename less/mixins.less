@@ -1,1 +1,36 @@
 // Mixins Here
+
+.navflex() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navcol(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.butt(@height, @width){
+    display: flex;
+    justify-content: center;
+    height:@height;
+    width:@width;
+    font-size: 1.6rem;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    align-items: center;
+    border-radius: 7px;
+
+&:hover {
+    color: @btn-bg-color;
+    background-color: @porcelain;
+
+&:active {
+    background-color: mediumturquoise;
+    box-shadow: 0 9px #135a51;
+    transform: translateY(4px);
+    }
+  }
+}
