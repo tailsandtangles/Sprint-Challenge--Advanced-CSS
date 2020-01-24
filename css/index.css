@@ -330,3 +330,9 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+
+.button:active {
+  background-color: mediumturquoise;
+  box-shadow: 0 9px rgb(19, 90, 81);
+  transform: translateY(4px);
+}
